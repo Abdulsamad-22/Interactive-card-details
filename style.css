@@ -36,8 +36,8 @@ main{
     main{
         display: flex;
         flex-direction: column;
-        /*gap: 88px;
-        display: grid;
+        gap: 88px;
+        /*display: grid;
         grid-template-columns: 375px;
         align-items: center;
         background-color: pink;*/
@@ -50,7 +50,19 @@ main{
         flex-direction: column;
         align-items: center;
         gap: 88px;
-        /*display: grid;
+        /*max-width: 100%;
+        display: grid;
+        grid-template-columns: 375px;
+        align-items: center;
+        background-color: pink;*/
+    }
+}
+
+@media (min-width: 376px) and (max-width: 414px) {
+    main{
+        gap: 100px;
+        /*max-width: 100%;
+        display: grid;
         grid-template-columns: 375px;
         align-items: center;
         background-color: pink;*/
@@ -154,7 +166,16 @@ main{
     .cards{
         /*display: flex;
         flex-direction: column-reverse;*/
-        left: 28%;
+        left: 18%;
+        top: 4%;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 414px) {
+    .cards{
+        /*display: flex;
+        flex-direction: column-reverse;*/
+        left: 23%;
         top: 4%;
     }
 }
@@ -289,7 +310,7 @@ form{
     flex-direction: column;
     gap: 1.125rem;
     max-width: 380px;
-    margin-left: 60px;
+    /*margin-left: 60px;*/
 }
 
 @media (max-width: 600px) {
@@ -302,7 +323,15 @@ form{
     form{
         display: flex;
         flex-direction: column;
-        min-width: 320px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 414px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
 
