@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body> 
+
+  <main>
+    <div card-container>
+      <section class="bg-section">
+        <img class="bg" src="images/bg-main-desktop.png" alt="background-card">
+      </section>
+  
+      <div class="cards">
+        <div class="front-card-container">
+            <img class="front-card" src="images/bg-card-front.png" alt="front-card">
+       
+            <img class="card-logo" src="images/card-logo.svg" alt="card-logo">
+
+            <p class="card-number">
+              0000 0000 0000 0000
+            </p>
+    
+            <p class="holders-name js-holders-name">
+              Jane Appleseed
+            </p>
+      
+            <p class="expiry-date">
+              00/00
+            </p>          
+        </div>
+    
+        <div class="back-card-container">
+          <img class="back-card" src="images/bg-card-back.png" alt="back-card">
+    
+            <p class="cvc-number">
+              000
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <form class="form" for="card-details">
+        <div class="holder-name-input">
+          <label>CARDHOLDER NAME</label><br>
+          <input class="card-holder-name js-name-input" type="text" placeholder=" e.g. Jane Appleseed"><br>
+        </div>
+  
+        <div class="holder-number-input">    
+          <label>CARD NUMBER</label><br>
+          <input class="card-number-input js-number-input" type="" placeholder="e.g. 0000 0000 0000 0000">
+        </div>
+
+        <div class="classified-container">
+          <div class="date-label">
+            <label class="exp">Exp. Date (MM/YY)</label>
+            <div class="dates-container">
+              <input class="month" type="number" placeholder="MM">
+              <input class="year" type="number" placeholder="YY">
+            </div>
+          </div>
+  
+          <div class="cvv-container">
+            <label>CVC</label><br>
+            <input class="cvv" type="number" placeholder="e.g. 123">
+          </div>
+        </div>
+
+        <!--
+        <div class="date">
+          <div class="classified-container">
+            <div class="dates-container">
+              <label class="exp">Exp. Date (MM/YY)</label><br>
+              <input class="month" type="number" placeholder="MM">
+              <input class="year" type="number" placeholder="YY">
+            </div>
+            
+            <div class="cvv-container">
+              <label>CVC</label><br>
+            <input class="cvv" type="number" placeholder="e.g. 123">
+            </div>
+          </div>
+        </div>
+        -->
+  
+  
+        <button class="confirm-cta">
+          Confirm
+        </button>
+      </form>
+    </div>
+    <div class="complete-container"></div>
+  </main>
+  
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Abdulsamad</a>.
+  </div>-->
+  <script src="script.js"></script>
+</body>
+</html>
