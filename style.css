@@ -29,7 +29,7 @@ main{
     grid-template-columns: 600px 1fr;
     align-items: center;
     column-gap: 90px;
-    min-width: 100%;
+    max-width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -37,10 +37,6 @@ main{
         display: flex;
         flex-direction: column;
         gap: 88px;
-        /*display: grid;
-        grid-template-columns: 375px;
-        align-items: center;
-        background-color: pink;*/
     }
 }
 
@@ -49,23 +45,6 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 88px;
-        /*max-width: 100%;
-        display: grid;
-        grid-template-columns: 375px;
-        align-items: center;
-        background-color: pink;*/
-    }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-    main{
-        gap: 100px;
-        /*max-width: 100%;
-        display: grid;
-        grid-template-columns: 375px;
-        align-items: center;
-        background-color: pink;*/
     }
 }
 
@@ -123,6 +102,19 @@ main{
     }
 }
 
+
+@media (min-width: 376px) and (max-width: 414px) {
+    .front-card-container{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 600px) {
+    .front-card-container{
+        margin-bottom: 20px;
+    }
+}
+
 .front-card{
     max-width: 400px;
     max-height: 200px;
@@ -173,8 +165,13 @@ main{
 
 @media (min-width: 376px) and (max-width: 414px) {
     .cards{
-        /*display: flex;
-        flex-direction: column-reverse;*/
+        left: 23%;
+        top: 4%;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 600px) {
+    .cards{
         left: 23%;
         top: 4%;
     }
@@ -329,9 +326,13 @@ form{
 
 @media (min-width: 376px) and (max-width: 414px) {
     form{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 600px) {
+    form{
+        max-width: 100%;
     }
 }
 
@@ -362,8 +363,22 @@ label{
 
 @media (min-width: 320px) and (max-width: 375px) {
     .card-holder-name, .card-number-input, .confirm-cta{
-        min-width: 91.5%;
+        min-width: 89.9%;
         padding: 0.875rem;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 414px) {
+    .card-holder-name, .card-number-input, .confirm-cta{
+        min-width: 89.9%;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 600px) {
+    .card-holder-name, .card-number-input, .confirm-cta{
+        min-width: 89.9%;
+        padding: 1rem;
     }
 }
 
@@ -394,6 +409,18 @@ label{
 @media (min-width: 320px) and (max-width: 375px) {
     .month, .year, .cvv{
         padding: 0.875rem;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 414px) {
+    .month, .year, .cvv{
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 600px) {
+    .month, .year, .cvv{
+        padding: 1rem;
     }
 }
 

@@ -51,9 +51,6 @@ function validInputs() {
         continueButton.addEventListener('click', () => {
             console.log('Continue button clicked.');
             clearDetails();
-            //name.value = '';
-            //holderNameElement.innerText = 'Jane Appleseed';
-            // What happens when "Continue" is clicked
             container.style.display = 'block';
             thankYouCard.remove();
         });
