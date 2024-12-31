@@ -106,12 +106,19 @@ main{
 @media (min-width: 376px) and (max-width: 414px) {
     .front-card-container{
         margin-bottom: 20px;
+        bottom: -57.2%;
+        /*top: 120px;*/
+        right: 20%;
+        z-index: 100;
     }
 }
 
 @media (min-width: 415px) and (max-width: 600px) {
     .front-card-container{
         margin-bottom: 20px;
+        bottom: -57.2%;
+        right: 20%;
+        z-index: 100;
     }
 }
 
